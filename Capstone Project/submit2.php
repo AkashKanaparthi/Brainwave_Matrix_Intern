@@ -1,9 +1,9 @@
 <?php
 // MySQL server configuration
-$servername = "capstonedb.cfpgnjehw330.ap-south-1.rds.amazonaws.com";
-$username = "capstoneuser";
-$password = "Avinash12345";
-$dbname = "capstone";
+$servername = "capstone-database.cfukyi2mibhq.ap-south-1.rds.amazonaws.com";
+$username = "Capstoneuser";
+$password = "Akash123";
+$dbname = "Capstone";
 
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 $userInput = $_POST['Name'];
 
 // Prepare the SQL statement to check username validity
-$stmt = $conn->prepare("SELECT * FROM capstone.customers WHERE Name = ?");
+$stmt = $conn->prepare("SELECT * FROM Capstone.customers WHERE Name = ?");
 $stmt->bind_param("s", $userInput);
 $stmt->execute();
 $result = $stmt->get_result();
