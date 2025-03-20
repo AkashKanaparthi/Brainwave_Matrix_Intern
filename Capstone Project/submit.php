@@ -4,7 +4,7 @@ $gender = $_POST['gender'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
 
-$mysqli = new mysqli('capstonedb.cfpgnjehw330.ap-south-1.rds.amazonaws.com', 'capstoneuser', 'Avinash12345', 'capstone');
+$mysqli = new mysqli('capstone-database.cfukyi2mibhq.ap-south-1.rds.amazonaws.com', 'Capstoneuser', 'Akash123', 'Capstone');
 if ($mysqli->connect_errno) {
     die('Failed to connect to MySQL: ' . $mysqli->connect_error);
 }
