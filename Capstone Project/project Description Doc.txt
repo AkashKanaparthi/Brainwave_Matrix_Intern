@@ -91,8 +91,7 @@ Install required dependencies:
 --> Create an "EFS", Mount it to your ec2 instance, Mount it to /var/www/html/ path.
 --> Make it permanent mount*
 
-
-sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0ebd12026b6af47d9.efs.ap-south-1.amazonaws.com:/ /var/www/html/
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0601357b57d5232d1.efs.ap-south-1.amazonaws.com:/ /var/www/html/
 
 write entry to /etc/fstab, get the entry info from /etc/mtab file.
 
