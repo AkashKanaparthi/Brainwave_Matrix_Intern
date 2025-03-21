@@ -109,6 +109,9 @@ vim "info.php" and write below code/command to "info.php" file, save and close
 
 
 In your JUMP Server, Open browser and enter "INSTANCE-private-IP/info.php", this should display all php config information.
+                                      or
+curl http://localhost/info.php (It should display all php data)
+
 
 --
 
