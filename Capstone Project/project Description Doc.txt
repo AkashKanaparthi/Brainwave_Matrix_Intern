@@ -128,6 +128,18 @@ Also, Edit files "submit.php" and "submit2.php" and replace the below content.
 
 IF YOU HAVE A DOMAIN NAME**
 ** Configure "http to https redirection".
+
+vim /etc/httpd/conf/httpd.conf
+Go to Listen 80
+paste the content
+
+<VirtualHost *:80>
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule .*  https://%{HTTP:Host}%{REQUEST_URI} [L,R=permanent]
+</VirtualHost>
+service httpd restart
+
 Later, using Route53 map your domain Name.
 
 ---------
