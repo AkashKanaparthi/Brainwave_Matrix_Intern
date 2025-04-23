@@ -51,7 +51,7 @@ This project demonstrates the deployment of a secure, scalable web application u
        phone VARCHAR(20) NOT NULL,
        PRIMARY KEY (id)
    );
-   CREATE USER 'capstoneuser' IDENTIFIED BY 'Avinash12345';
+   CREATE USER 'capstoneuser' IDENTIFIED BY 'Akash12345';
    GRANT ALL PRIVILEGES ON capstone.* TO capstoneuser;
    FLUSH PRIVILEGES;
    ```
